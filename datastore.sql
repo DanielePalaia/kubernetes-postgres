@@ -2,10 +2,10 @@ DROP DATABASE tododatastore;
 
 CREATE DATABASE tododatastore;
 
-USE tododatastore
+ \c tododatastore
 
 CREATE TABLE ToDo (
-	    ID int NOT NULL AUTO_INCREMENT,
+	    ID serial,
 	    Topic varchar(255),
 	    Completed int,
 	    Due varchar(255) DEFAULT '',
