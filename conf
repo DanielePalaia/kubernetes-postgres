@@ -1,0 +1,5 @@
+USERNAME:dpalaia
+PASSWD:
+HOST:localhost
+DATABASE:tododatastore
+PORT:5432

@@ -1,0 +1,125 @@
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+paths:
+  /todos:
+    delete:
+      description: Delete all items in the collection
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+    get:
+      description: get all collection items
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+    post:
+      consumes:
+      - application/json
+      description: Update an element in the collection
+      parameters:
+      - description: '{Topic:New TodoElem, Completed:0}'
+        in: body
+        name: newtodoitem
+        schema:
+          $ref: '#/definitions/string'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+    put:
+      consumes:
+      - application/json
+      description: create an element for the collection
+      parameters:
+      - description: '{Topic:New TodoElem, Completed:0}'
+        in: body
+        name: newtodoitem
+        schema:
+          $ref: '#/definitions/string'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+  /todos/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete an element in the collection
+      parameters:
+      - description: '{id}'
+        in: query
+        name: itemtodelete
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+    get:
+      description: get an Element of the collection
+      parameters:
+      - description: itemtoget
+        in: path
+        name: id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+swagger: "2.0"

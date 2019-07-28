@@ -1,0 +1,28 @@
+TodoService datastore.go:40: connecting to the datastore
+TodoService datastore.go:221: 2019-07-28 11:10:59.326653 +0000 UTC dpalaia
+
+TodoService datastore.go:229: 2019-07-28 11:10:59.326724 +0000 UTC 
+TodoService datastore.go:59: 2019-07-28 11:10:59.326762 +0000 UTC host=localhost port=5432 user=dpalaia dbname=tododatastore sslmode=disable
+TodoService datastore.go:65: returning from connecting to the datastore
+TodoService datastore.go:40: connecting to the datastore
+TodoService datastore.go:221: 2019-07-28 11:11:03.509142 +0000 UTC dpalaia
+
+TodoService datastore.go:229: 2019-07-28 11:11:03.509168 +0000 UTC 
+TodoService datastore.go:59: 2019-07-28 11:11:03.509202 +0000 UTC host=localhost port=5432 user=dpalaia dbname=tododatastore sslmode=disable
+TodoService datastore.go:65: returning from connecting to the datastore
+TodoService datastore.go:40: connecting to the datastore
+TodoService datastore.go:221: 2019-07-28 11:11:21.672156 +0000 UTC dpalaia
+
+TodoService datastore.go:229: 2019-07-28 11:11:21.672177 +0000 UTC 
+TodoService datastore.go:59: 2019-07-28 11:11:21.672207 +0000 UTC host=localhost port=5432 user=dpalaia dbname=tododatastore sslmode=disable
+TodoService datastore.go:65: returning from connecting to the datastore
+TodoService datastore.go:77: retriving all elements from collection
+TodoService datastore.go:40: connecting to the datastore
+TodoService datastore.go:221: 2019-07-28 11:11:29.654304 +0000 UTC dpalaia
+
+TodoService datastore.go:229: 2019-07-28 11:11:29.65433 +0000 UTC 
+TodoService datastore.go:59: 2019-07-28 11:11:29.654394 +0000 UTC host=localhost port=5432 user=dpalaia dbname=tododatastore sslmode=disable
+TodoService datastore.go:65: returning from connecting to the datastore
+TodoService datastore.go:82: before defferring
+TodoService datastore.go:88: after selecting
+TodoService datastore.go:101: ending retriving all elements from collection
