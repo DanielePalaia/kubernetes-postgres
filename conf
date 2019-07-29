@@ -1,5 +1,5 @@
-USERNAME:dpalaia
+USERNAME:postgres
 PASSWD:
-HOST:localhost
+HOST:postgres
 DATABASE:tododatastore
 PORT:5432
