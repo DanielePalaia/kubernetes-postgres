@@ -151,3 +151,8 @@ PORT:5432
 ``
 
 ### 5. Deploy the pod on minikube
+Best thing in this case would be to create a service as load balancer linked to multiple pods where the service is deployed.
+It seems that minikube doesn't support services of type loadBalancer so we can just deploy the service in one pod do a port forward and try it out. </br>
+As the image is already on Dockerhub we can use the minikube web interface to create a new deployment and pod. </br>
+
+![Screenshot](./pics/deploy.png) </br>
