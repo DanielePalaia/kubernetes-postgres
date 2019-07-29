@@ -69,3 +69,9 @@ Run dashboard </br>
 ### 3. Install Postgresql on minikube 
 Follow this guideline to create a volume a pod and a service: </br>
 https://severalnines.com/blog/using-kubernetes-deploy-postgresql
+</br>
+yaml file have been provided in kub-yaml folder. You can just: </br>
+**kubectl create -f postgres-configmap.yaml** </br>
+**kubectl create -f postgres-storage.yaml** </br>
+**kubectl create -f postgres-deployment.yaml** </br>
+to create a configmap, a storage a pod and a deployment for postgresql. 
