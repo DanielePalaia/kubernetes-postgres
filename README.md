@@ -75,3 +75,5 @@ yaml file have been provided in kub-yaml folder. You can just: </br>
 **kubectl create -f postgres-storage.yaml** </br>
 **kubectl create -f postgres-deployment.yaml** </br>
 to create a configmap, a storage a pod and a deployment for postgresql. 
+
+![Screenshot](./pics/minikube2.png) </br>
