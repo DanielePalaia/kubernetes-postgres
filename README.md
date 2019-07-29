@@ -86,4 +86,49 @@ then swith to user postgres and do psql </br>
 Create same database and table as for datastore.sql </br>
 
 ### 5. Deploy this service kubernetes-postgres on minikube and link to the postgres instance
+A version of the microservice has already been deployed on dockerhub </br>
+Also a Dockerfile is provided. You may want to create an image you need to: </br>
+**docker build -t kubernetes-postgres .** </br>
+```
+Danieles-MBP:kubernetes-postgres dpalaia$ docker build -t kubernetes-postgres  .
+Sending build context to Docker daemon  40.18MB
+Step 1/10 : FROM golang
+ ---> be63d15101cb
+Step 2/10 : ADD . /go/src/kubernetes-postgres
+ ---> 0effa7f0cd0f
+Step 3/10 : RUN go get github.com/gorilla/mux
+ ---> Running in a869896a9863
+Removing intermediate container a869896a9863
+ ---> 119d271a84c0
+Step 4/10 : RUN go get github.com/lib/pq
+ ---> Running in 3d80920c4029
+Removing intermediate container 3d80920c4029
+ ---> ce05cab4fafa
+Step 5/10 : RUN go get github.com/swaggo/http-swagger
+ ---> Running in 21f1a722790f
+Removing intermediate container 21f1a722790f
+ ---> dcb30e1aee12
+Step 6/10 : RUN go get github.com/alecthomas/template
+ ---> Running in c3867ea3a849
+Removing intermediate container c3867ea3a849
+ ---> cc5731748581
+Step 7/10 : ADD conf /go
+ ---> 7ffe14d67cfd
+Step 8/10 : RUN go build /go/src/kubernetes-postgres
+ ---> Running in c5d6d3be35cf
+Removing intermediate container c5d6d3be35cf
+ ---> 3bc4c6d70443
+Step 9/10 : ENTRYPOINT /go/src/kubernetes-postgres/kubernetes-postgres
+ ---> Running in 68f435ac926b
+Removing intermediate container 68f435ac926b
+ ---> 207c2512b411
+Step 10/10 : EXPOSE 8080
+ ---> Running in faafd404a00b
+Removing intermediate container faafd404a00b
+ ---> 254945f7ff05
+Successfully built 254945f7ff05
+Successfully tagged kubernetes-postgres:latest
+```
 
+then </br>
+**docker run --publish 6060:8080 --name test kubernetes-postgres** </br>
