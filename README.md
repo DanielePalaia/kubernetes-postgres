@@ -86,7 +86,9 @@ then swith to user postgres and do psql </br>
 Create same database and table as for datastore.sql </br>
 
 ### 5. Deploy this service kubernetes-postgres on minikube and link to the postgres instance
-A version of the microservice has already been deployed on dockerhub </br>
+A version of the microservice has already been deployed on dockerhub: </br></br> 
+https://cloud.docker.com/u/danielepalaia/repository/docker/danielepalaia/kubernetes-postgres </br></br>
+
 Also a Dockerfile is provided. You may want to create an image you need to: </br>
 **docker build -t kubernetes-postgres .** </br>
 ```
@@ -134,5 +136,13 @@ then </br>
 **docker run --publish 6060:8080 --name test kubernetes-postgres** </br>
 **docker push** </br>
 if you wanto to push back to DockerHub. </br>
+You many need to modify your conf file to database connection if different from standard values. In the image pushed on dockerhub these values are set: </br>
+``
+USERNAME:postgres
+PASSWD:
+HOST:postgres
+DATABASE:tododatastore
+PORT:5432
+``
 
 ### 5. Deploy the pod on minikube
