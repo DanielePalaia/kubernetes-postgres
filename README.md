@@ -55,8 +55,8 @@ Initially you will receive an empty list of todos. Fill the todo with the other 
 ### 1. Install minikube
 On mac is enough to:</br>
 **brew cask install virtualbox**</br>
-**brew cask reinstall kubectl**</br>
-**brew cask reinstall docker** </br>
+**brew cask install kubectl**</br>
+**brew cask install docker** </br>
 
 ### 2. Start minikube and dashboard
 Start minikube: </br>
