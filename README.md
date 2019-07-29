@@ -156,3 +156,4 @@ It seems that minikube doesn't support services of type loadBalancer so we can j
 As the image is already on Dockerhub we can use the minikube web interface to create a new deployment and pod. </br>
 
 ![Screenshot](./pics/deploy.png) </br>
+![Screenshot](./pics/deploy2.png) </br>
