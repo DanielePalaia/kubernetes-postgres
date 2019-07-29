@@ -49,3 +49,19 @@ http://localhost:8080/docs/index.html</br>
 ![Screenshot](./pics/pic4.png) </br>
 Initially you will receive an empty list of todos. Fill the todo with the other rest api with curl or the swagger doc.
 </br>
+
+## Running on kubernetes/minikube
+
+### Install minikube
+On mac is enough to:</br>
+**brew cask install virtualbox**</br>
+**brew cask reinstall kubectl**</br>
+**brew cask reinstall docker** </br>
+
+### Start minikube and dashboard
+Start minikube: </br>
+**minikube start** </br>
+Run dashboard </br>
+**minikube dashboard**</br>
+
+![Screenshot](./pics/minikube.png) </br>
