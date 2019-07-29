@@ -157,3 +157,10 @@ As the image is already on Dockerhub we can use the minikube web interface to cr
 
 ![Screenshot](./pics/deploy.png) </br>
 ![Screenshot](./pics/deploy2.png) </br>
+
+### 6. Use port-forward to access the service from localhost
+Best thing to do would be to create a LoadBalancer service to control the pods where this service will run.
+As minikube doesn't support services of type load balancer or ingress all we can do is to forward the port of a pod and access it directly. </br>
+you can do in this way: </br>
+**bectl port-forward pod-name 8080:8080**
+
