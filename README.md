@@ -52,16 +52,20 @@ Initially you will receive an empty list of todos. Fill the todo with the other 
 
 ## Running on kubernetes/minikube
 
-### Install minikube
+### 1. Install minikube
 On mac is enough to:</br>
 **brew cask install virtualbox**</br>
 **brew cask reinstall kubectl**</br>
 **brew cask reinstall docker** </br>
 
-### Start minikube and dashboard
+### 2. Start minikube and dashboard
 Start minikube: </br>
 **minikube start** </br>
 Run dashboard </br>
 **minikube dashboard**</br>
 
 ![Screenshot](./pics/minikube.png) </br>
+
+### 3. Install Postgresql on minikube 
+Follow this guideline to create a volume a pod and a service: </br>
+https://severalnines.com/blog/using-kubernetes-deploy-postgresql
