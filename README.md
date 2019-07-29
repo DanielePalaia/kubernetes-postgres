@@ -8,7 +8,9 @@ https://github.com/DanielePalaia/web-service-kubernetes</br>
 
 ## Datastore and rest api
 
-The todos operations are saved in a mysql datastore defined in datastore.sql
+The todos operations are saved in a mysql datastore defined in datastore.sql </br>
+Don't put much attention to the table schema as this is just a test for Docker and Kubernetes </br>
+Just topic is a description of the todotopic, Completed can be a value which show the degree of completness of the todo ex (from one to 10) and Due can be a date or something like ("in 2 days"). </br>
 
 ```
 CREATE TABLE ToDo (
@@ -81,7 +83,8 @@ to create a configmap, a storage a pod and a deployment for postgresql.
 ### 4. Configuring postgresql on minikube and creating database and table
 You need to create database and table in the postgres instance in your minikube env </br>
 you can use this command to access the pod </br>
-kubectl exec -it <podname> bash </br>
+kubectl exec -it <podname> bash** </br>
+**Also change passwd for postgres user to changeme**
 then swith to user postgres and do psql </br>
 Create same database and table as for datastore.sql </br>
 
@@ -144,7 +147,7 @@ if you wanto to push back to DockerHub. </br>
 You many need to modify your conf file to database connection if different from standard values. In the image pushed on dockerhub these values are set: </br>
 ``
 USERNAME:postgres
-PASSWD:
+PASSWD:changeme
 HOST:postgres
 DATABASE:tododatastore
 PORT:5432
