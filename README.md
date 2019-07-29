@@ -133,11 +133,13 @@ Successfully tagged kubernetes-postgres:latest
 ```
 
 then </br>
+
 ```
 docker run --publish 6060:8080 --name test kubernetes-postgres
 docker tag kubernetes-postgres danielepalaia/kubernetes-postgres
 docker push
-``
+```
+
 if you wanto to push back to DockerHub. </br>
 You many need to modify your conf file to database connection if different from standard values. In the image pushed on dockerhub these values are set: </br>
 ``
