@@ -79,4 +79,11 @@ to create a configmap, a storage a pod and a deployment for postgresql.
 ![Screenshot](./pics/minikube2.png) </br>
 
 ### 4. Configuring postgresql on minikube and creating database and table
+You need to create database and table in the postgres instance in your minikube env </br>
+you can use this command to access the pod </br>
+kubectl exec -it <podname> bash </br>
+then swith to user postgres and do psql </br>
+Create same database and table as for datastore.sql </br>
+
+### 5. Deploy this service kubernetes-postgres on minikube and link to the postgres instance
 
