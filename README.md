@@ -132,3 +132,7 @@ Successfully tagged kubernetes-postgres:latest
 
 then </br>
 **docker run --publish 6060:8080 --name test kubernetes-postgres** </br>
+**docker push** </br>
+if you wanto to push back to DockerHub. </br>
+
+### 5. Deploy the pod on minikube
