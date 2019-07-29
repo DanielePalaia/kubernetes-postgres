@@ -77,3 +77,6 @@ yaml file have been provided in kub-yaml folder. You can just: </br>
 to create a configmap, a storage a pod and a deployment for postgresql. 
 
 ![Screenshot](./pics/minikube2.png) </br>
+
+### 4. Configuring postgresql on minikube and creating database and table
+
