@@ -164,6 +164,6 @@ As minikube doesn't support services of type load balancer or ingress all we can
 you can do in this way: </br>
 **kubectl port-forward pod-name 8080:8080**
 
-### 6. Access web service with curl or swagger doc api
+### 7. Access web service with curl or swagger doc api
 You can now access the api as it is locally.
 ![Screenshot](./pics/screen.png) </br>
