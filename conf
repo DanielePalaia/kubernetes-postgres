@@ -1,5 +1,6 @@
 USERNAME:postgres
-PASSWD:
+PASSWD:changeme
 HOST:postgres
 DATABASE:tododatastore
 PORT:5432
+
