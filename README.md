@@ -43,7 +43,7 @@ A Swagger documentation that allows you to test this interface is also provided:
 
 ## Running the app locally
 In conf file please specify the right database connection information,
-then you can simply run the binary provided in ./bin and run the binary </br>
+then you can simply run the binary provided in ./kubernetes-postgres (for mac) and run the binary </br>
 
 **./kubernetes-postgres**</br></br>
 Then go to the swagger interface</br>
