@@ -8,7 +8,7 @@ https://github.com/DanielePalaia/web-service-kubernetes</br>
 
 ## Datastore and rest api
 
-The todos operations are saved in a mysql datastore defined in datastore.sql </br>
+The todos operations are saved in a postgres datastore defined in datastore.sql </br>
 Don't put much attention to the table schema as this is just a test for Docker and Kubernetes </br>
 Just topic is a description of the todotopic, Completed can be a value which show the degree of completness of the todo ex (from one to 10) and Due can be a date or something like ("in 2 days"). </br>
 
