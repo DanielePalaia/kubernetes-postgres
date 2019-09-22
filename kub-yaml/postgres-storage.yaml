@@ -10,9 +10,9 @@ spec:
   capacity:
     storage: 5Gi
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   hostPath:
-    path: "/mnt/data"
+    path: "/var/lib/postgresql/data"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -23,7 +23,7 @@ metadata:
 spec:
   storageClassName: manual
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: 5Gi
